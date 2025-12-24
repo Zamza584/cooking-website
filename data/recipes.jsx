@@ -1,0 +1,76 @@
+export const recipes = [
+  {
+    id: 1,
+    name: "Spaghetti Carbonara",
+    description: "Classic Italian pasta with creamy egg sauce",
+    image:
+      "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop",
+    prepTime: 10,
+    cookTime: 20,
+    ingredients: [
+      "400g spaghetti",
+      "200g guanciale or pancetta",
+      "4 large eggs",
+      "100g Pecorino Romano cheese",
+      "Salt and black pepper",
+    ],
+    instructions: [
+      "Cook spaghetti in salted boiling water until al dente",
+      "Fry guanciale until crispy",
+      "Whisk eggs with grated cheese",
+      "Combine pasta with guanciale and reserve pasta water",
+      "Mix in egg mixture off heat, adding pasta water as needed",
+    ],
+  },
+  {
+    id: 2,
+    name: "Chocolate Chip Cookies",
+    description: "Delicious homemade chocolate chip cookies",
+    image:
+      "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500&h=400&fit=crop",
+    prepTime: 15,
+    cookTime: 12,
+    ingredients: [
+      "2 cups flour",
+      "1 cup butter, softened",
+      "3/4 cup sugar",
+      "3/4 cup brown sugar",
+      "2 eggs",
+      "2 tsp vanilla extract",
+      "2 cups chocolate chips",
+    ],
+    instructions: [
+      "Cream butter and sugars together",
+      "Beat in eggs and vanilla",
+      "Mix in flour gradually",
+      "Fold in chocolate chips",
+      "Drop spoonfuls on baking sheet",
+      "Bake at 375°F for 12 minutes",
+    ],
+  },
+  {
+    id: 3,
+    name: "Caesar Salad",
+    description: "Crispy romaine with homemade caesar dressing",
+    image:
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop",
+    prepTime: 15,
+    cookTime: 0,
+    ingredients: [
+      "Romaine lettuce",
+      "Parmesan cheese",
+      "Croutons",
+      "3 anchovy fillets",
+      "2 tbsp lemon juice",
+      "1 clove garlic",
+      "1/2 cup olive oil",
+    ],
+    instructions: [
+      "Make dressing by blending anchovies, garlic, and lemon juice",
+      "Slowly add olive oil while blending",
+      "Toss lettuce with dressing",
+      "Add croutons and parmesan",
+      "Serve immediately",
+    ],
+  },
+];
