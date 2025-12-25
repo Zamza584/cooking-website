@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
     <section className="hero hero-grid">
@@ -7,11 +9,10 @@ export default function Hero() {
           Where simple ingredients become unforgettable meals. Watch, learn,
           and cook along — deliciousness starts here.
         </p>
-        <button className="cta-button">Explore Recipes</button>
+        <Link href="/recipes" className="cta-button">Explore Recipes</Link>
       </div>
 
       <div className="hero-video-wrapper">
-        <div className="video-overlay-text">Sizzle & Serve — Watch the magic</div>
         <video
           className="hero-video"
           src="https://cdn.pixabay.com/video/2020/03/05/33256-396487978_large.mp4"

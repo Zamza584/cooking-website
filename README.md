@@ -5,38 +5,45 @@ A modern, responsive Next.js web application for discovering, sharing, and manag
 ## Features
 
 **Recipe Discovery**
+
 - Browse a curated collection of recipes
 - View detailed recipe information with ingredients and instructions
 - High-quality recipe images
 
 **Full-Screen Hero Video**
+
 - Immersive cooking video in the hero section
 - Auto-plays on page load
 - Responsive design for all screen sizes
 
 **Favorites System**
+
 - Mark recipes as favorites with one click
 - Persistent favorites saved to browser storage
 - Dedicated favorites page to view all saved recipes
 
 **Add New Recipes**
+
 - Create custom recipes with image upload
 - Support for ingredients and step-by-step instructions
 - Custom validation with user-friendly error messages
 - Images stored as data URLs for easy sharing
 
 **Recipe Management**
+
 - Delete user-added recipes directly from recipe detail pages
 - Automatic page redirect after deletion
 - Clean, intuitive UI
 
 **Responsive Design**
+
 - Mobile-first approach
 - Hamburger menu on small screens
 - Optimized for desktop, tablet, and mobile
 - Smooth scroll-triggered navbar darkening
 
 **Modern UI/UX**
+
 - Beautiful typography with Google Fonts (Playfair Display, Lora)
 - Warm, inviting color palette (beige + dark accents)
 - Custom toast notifications (no browser alerts)
@@ -54,22 +61,26 @@ A modern, responsive Next.js web application for discovering, sharing, and manag
 ## Installation
 
 ### Prerequisites
+
 - Node.js 16+ and npm installed on your machine
 
 ### Steps
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/Zamza584/cooking-website.git
    cd cooking-website
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Run the development server:**
+
    ```bash
    npm run dev
    ```
@@ -80,22 +91,26 @@ A modern, responsive Next.js web application for discovering, sharing, and manag
 ## Usage
 
 ### Browsing Recipes
+
 - Visit the **Recipes** page to see all available recipes
 - Click **View Recipe** on any recipe card to see full details
 - Use the **Explore Recipes** button on the home page to get started
 
 ### Managing Favorites
+
 - Click the heart button on any recipe card to save it as a favorite
 - Visit the **Favorites** page to see all your saved recipes
 - Click the heart again to remove from favorites
 
 ### Adding Recipes
+
 - Click **Add Recipe** in the navigation menu
 - Fill in recipe details: name, description, prep/cook time, ingredients, instructions
 - Upload a recipe image (image upload required)
 - Submit to save your recipe (stored locally in your browser)
 
 ### Deleting Recipes
+
 - On a recipe detail page, if the recipe was added by you, click the **Delete Recipe** button
 - Confirm deletion—the recipe will be removed from your collection
 
@@ -136,28 +151,34 @@ cooking-website/
 ## Key Technologies Explained
 
 ### Next.js App Router
+
 This project uses the modern App Router pattern for file-based routing. Pages are automatically created from the directory structure in the `app/` folder.
 
 ### Client Components
+
 Pages and components that use browser APIs (like `localStorage`) are marked with `"use client"` at the top. This tells Next.js to render them on the client side.
 
 ### localStorage for Persistence
+
 - **Favorites:** Stored under the key `"favorites"` as an array of recipe IDs
 - **Added Recipes:** Stored under the key `"addedRecipes"` as an array of recipe objects
 - Images are stored as data URLs to keep everything local
 
 ### Custom Validation
+
 Instead of browser default validation popups, the app uses custom validation with toast notifications for a better UX.
 
 ## Development
 
 ### Build for Production
+
 ```bash
 npm run build
 npm start
 ```
 
 ### Run Linter
+
 ```bash
 npm run lint
 ```
@@ -165,13 +186,17 @@ npm run lint
 ## Features Under the Hood
 
 ### Event-Based Updates
+
 The app uses custom events (`recipesUpdated`, `favoritesUpdated`) to keep components in sync when data changes without a page reload.
 
 ### Image Upload
+
 Images are converted to data URLs using the FileReader API, allowing images to be stored in localStorage without a backend.
 
 ### Responsive Navbar
+
 The navbar includes:
+
 - Scroll-triggered darkening effect
 - Mobile hamburger menu (visible on screens < 768px)
 - Semi-transparent menu overlay with smooth animations
@@ -179,6 +204,7 @@ The navbar includes:
 ## Data Persistence
 
 All data is stored **locally in your browser** using the `localStorage` API:
+
 - Favorites persist across page refreshes
 - User-added recipes persist across sessions
 - Clearing browser storage will reset all custom data
