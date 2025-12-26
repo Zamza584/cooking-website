@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import RecipeCard from '@/components/RecipeCard';
+import RecipeCard from '@/ui/recipes/RecipeCard';
 import { recipes as baseRecipes } from '@/data/recipes';
 
 export default function FavoritesPage() {

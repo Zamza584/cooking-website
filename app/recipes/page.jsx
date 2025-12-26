@@ -1,4 +1,4 @@
-import RecipesList from '@/components/RecipesList';
+import RecipesList from '@/ui/recipes/RecipesList';
 
 export default function RecipesPage() {
   return (

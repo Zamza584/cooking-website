@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { recipes as baseRecipes } from "@/data/recipes";
-import FavoriteButton from "@/components/FavoriteButton";
-import Toast from "@/components/Toast";
+import FavoriteButton from "@/ui/FavoriteButton";
+import Toast from "@/ui/Toast";
 
 export default function RecipeDetail({ params }) {
   const router = useRouter();

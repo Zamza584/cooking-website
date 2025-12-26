@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { recipes as baseRecipes } from "@/data/recipes";
-import Toast from "@/components/Toast";
+import Toast from "@/ui/Toast";
 
 export default function AddRecipePage() {
     const [name, setName] = useState("");

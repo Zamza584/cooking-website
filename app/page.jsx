@@ -1,5 +1,5 @@
-import Hero from '@/components/Hero';
-import RecipesList from '@/components/RecipesList';
+import Hero from '@/ui/Hero';
+import RecipesList from '@/ui/recipes/RecipesList';
 
 export default function Home() {
   return (

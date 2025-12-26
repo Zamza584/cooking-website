@@ -1,5 +1,5 @@
 import Link from "next/link";
-import FavoriteButton from "@/components/FavoriteButton";
+import FavoriteButton from "@/ui/FavoriteButton";
 
 export default function RecipeCard({ recipe }) {
   return (

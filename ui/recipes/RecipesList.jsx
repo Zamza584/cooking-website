@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { recipes as baseRecipes } from "@/data/recipes";
-import RecipeCard from "@/components/RecipeCard";
+import RecipeCard from "@/ui/recipes/RecipeCard";
 
 export default function RecipesList({ featured = false, limit = 6 }) {
     const [recipes, setRecipes] = useState(baseRecipes);
